@@ -14,7 +14,9 @@ Created on Thu Mar  4 17:05:53 2021
 #    Trading Frequency: Daily
 #    What can you do on exit or entry point to iprove the backtesting PnL performance? Articulate the trade-offs between profitability and risk using high or low entry/exit points.
 #    For example, what are the pros and cons for increasing the entry point from 1 to 2?
+#       High entry point might improve the PnL performance but also improve the risk.
 #    What can you do to decrease the drawdown risk?
+#       use a stoploss line
 
 import math
 import numpy as np
@@ -26,8 +28,13 @@ class Lecture10Homework(QCAlgorithm):
     def Initialize(self):
 
     
-        self.SetStartDate(2018, 2, 1)  
-        self.SetEndDate(2018, 5, 1)
+        #self.SetStartDate(2018, 2, 1)  
+        #self.SetEndDate(2018, 5, 1)
+        #self.SetStartDate(2019, 2, 1)  
+        #self.SetEndDate(2019, 5, 1)        
+        self.SetStartDate(2020, 2, 1)  
+        self.SetEndDate(2020, 5, 1)       
+        
         
         
         self.SetCash(100000) 
@@ -79,23 +86,15 @@ class Lecture10Homework(QCAlgorithm):
         if not self.Portfolio.Invested:        # Enter
             # When W > μ+σ, buy Q and sell P
             if df1['W'][-2] > df1['μ+σ'][-2]:
-                self.SetHoldings("GS", Wp)
-                self.SetHoldings("MS", -Wq)
-            # When W < μ-σ, buy P and sell Q
-            if df1['W'][-2] < df1['μ-σ'][-2]:
                 self.SetHoldings("GS", -Wp)
                 self.SetHoldings("MS", Wq)
-        elif abs(df1['W'][-2] - mu) < 0.00001:     # Exit When W = μ, Liquidate all the positions
+            # When W < μ-σ, buy P and sell Q
+            if df1['W'][-2] < df1['μ-σ'][-2]:
+                self.SetHoldings("GS", Wp)
+                self.SetHoldings("MS", -Wq)
+        elif abs(df1['W'][-2] - mu) < 0.01:     # Exit When W = μ, Liquidate all the positions
             self.Liquidate("GS")
             self.Liquidate("MS")
             
     def OnData(self, data):
-        '''
-        # Don't place trades until our indicators are warmed up:
-        if self.IsWarmingUp:
-            return
-        # You should validate indicators are ready before using them:
-        if not self.bb.IsReady:
-            return
-        '''
         self.Strategy
