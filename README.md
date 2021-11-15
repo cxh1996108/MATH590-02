@@ -33,8 +33,8 @@ Feel free to contact us for ideas, codes and other resources you need.
 ### Final Report and Slides
 
 - PDF versions are on github 
-- https://github.com/cxh1996108/MATH590-02/blob/main/Project/Pairs_Trading_Strategy_Final_Report.pdf
-- https://github.com/cxh1996108/MATH590-02/blob/main/Project/Pairs_Trading_Strategy_Final_Slides.pdf
+- Final Report https://github.com/cxh1996108/MATH590-02/blob/main/Project/Pairs_Trading_Strategy_Final_Report.pdf
+- Final Slides https://github.com/cxh1996108/MATH590-02/blob/main/Project/Pairs_Trading_Strategy_Final_Slides.pdf
 
 - Tex for final slides https://www.overleaf.com/read/vsydgsdhssnm
 - Tex for final report https://www.overleaf.com/read/zbwjnscdfznd
