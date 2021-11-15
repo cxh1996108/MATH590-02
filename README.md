@@ -1,7 +1,7 @@
 # MATH590-02
 ## Duke University Math590-02 Algorithmic Trading Spring 2021
 
-## Update
+## Update Nov. 14, 2021
 
 - Add most of the code.
 - Kalman_Filter.ipynb and test.ipynb are not available due to no spare research node. Might be updated in the furue.
