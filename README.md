@@ -7,14 +7,6 @@
 - Kalman_Filter.ipynb and test.ipynb are not available due to no spare research node. Might be updated in the furue.
 - We are not able to download Jupyter Notebook from QuantConnect.
 
-## My Notes
-
-- https://shimo.im/docs/3djPY86w8rPXwrVJ/ 「Math 590-02 Algorithmic Trading」, you can open Shimo App after copying the url or small program
-
-- https://shimo.im/docs/yXKkcxqJd8jTYW3H/ 「Notes on Algorithmic Trading and Quantitative Strategies」, you can open Shimo App after copying the url or small program
-
-- https://shimo.im/docs/yvkCryc3PGDqYXch/ 「Kalman Filter」, you can open Shimo App after copying the url or small program
-
 
 
 ## Pairs Trading Strategy
@@ -45,4 +37,12 @@ Feel free to contact us for ideas, codes and other resources you need.
 - We will implement this strategy in Chinese stock market. 
 
 - We might update our strategy in the future.
+
+## My Notes
+
+- https://shimo.im/docs/3djPY86w8rPXwrVJ/ 「Math 590-02 Algorithmic Trading」, you can open Shimo App after copying the url or small program
+
+- https://shimo.im/docs/yXKkcxqJd8jTYW3H/ 「Notes on Algorithmic Trading and Quantitative Strategies」, you can open Shimo App after copying the url or small program
+
+- https://shimo.im/docs/yvkCryc3PGDqYXch/ 「Kalman Filter」, you can open Shimo App after copying the url or small program
 
